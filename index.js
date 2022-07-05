@@ -36,12 +36,20 @@ function createGrid() {
   }
 }
 
+// Generate random color
+function randomColor() {
+  const red = Math.round(Math.random() * 255);
+  const green = Math.round(Math.random() * 255);
+  const blue = Math.round(Math.random() * 255);
+  return `rgb(${red}, ${green}, ${blue})`;
+}
+
 // Change bg-color for hovered squares
 function changeColor() {
   const divs = container.querySelectorAll('div');
   divs.forEach(function(div) {
     div.addEventListener('mouseenter', function () {
-      this.classList.add('hovered');
+      this.style.backgroundColor = randomColor();
       console.log(this.style.width);
     }, { once: true });
   });
