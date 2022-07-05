@@ -5,6 +5,42 @@
 
 html,
 body{
-width: 100%;
-overflow-x: hidden;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container div {
+  background-color: aquamarine;
+  flex: auto;
+}
+
+.container div:hover {
+  background-color: pink;
+}
+
+button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: blueviolet;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(108, 28, 182);
+}
+
+.hovered {
+  background-color: black !important;
 }
