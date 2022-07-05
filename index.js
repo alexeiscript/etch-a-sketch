@@ -5,11 +5,7 @@ const createGridButton = document.getElementById("createGrid");
 // Click button to create grid
 createGridButton.addEventListener("click", createGrid);
 
-// Change bg-color for hovered squares
-
-
 function createGrid() {
-  
   // Ask user for number of squares
   const squaresPerSide = Number(
     prompt("Enter number of squares per side, between 1 and 100", 0)
@@ -38,9 +34,9 @@ function createGrid() {
     }
     changeColor()
   }
-  
 }
 
+// Change bg-color for hovered squares
 function changeColor() {
   const divs = container.querySelectorAll('div');
   divs.forEach(function(div) {
