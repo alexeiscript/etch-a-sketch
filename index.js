@@ -50,7 +50,6 @@ function changeColor() {
   divs.forEach(function(div) {
     div.addEventListener('mouseenter', function () {
       this.style.backgroundColor = randomColor();
-      console.log(this.style.width);
     }, { once: true });
   });
 }
